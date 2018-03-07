@@ -1,4 +1,4 @@
-CXXFLAGS = -Wall -Wextra
+CXXFLAGS = -Wall -Wextra -std=c++11
 
 all: llp1
 
