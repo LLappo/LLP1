@@ -15,6 +15,11 @@ void vowelToZ (string& s)
 	}
 }
 
+inline void sReverse (string& s)
+{
+	reverse(s.begin(), s.end());
+}
+
 int main (void)
 {
 	string name, surname, psedonym;
@@ -24,9 +29,15 @@ int main (void)
 	cin >> surname;
 	cout << "Write psedonym\n";
 	cin >> psedonym;
+
 	vowelToZ(name);
 	vowelToZ(surname);
 	vowelToZ(psedonym);
+
+	sReverse (name);
+	sReverse (surname);
+	sReverse (psedonym);
+
 	cout << name << " " << surname << " \"" << psedonym << "\"" << "\n";
 
 	return 0;
