@@ -7,11 +7,11 @@ using namespace std;
 
 void vowelToZ (string& s)
 {
-	const char* vowels = "aeiouy";
-	for(auto i=0; s[i]!=0; ++i)
+	const string vowels {"aeiouy"};
+	for(auto c : vowels)
 	{
-		replace(s.begin(), s.end(), vowels[i], 'z');
-		replace(s.begin(), s.end(), (char) toupper(vowels[i]), 'Z');
+		replace(s.begin(), s.end(), c, 'z');
+		replace(s.begin(), s.end(), (char) toupper(c), 'Z');
 	}
 }
 
