@@ -12,7 +12,7 @@ int main (void)
 	cin >> surname;
 	cout << "Write psedonym\n";
 	cin >> psedonym;
-	cout << name << " \"" << psedonym << "\" " << surname << "\n";
+	cout << name << " " << surname << " \"" << psedonym << "\"" << "\n";
 
 	return 0;
 }
